@@ -6,7 +6,10 @@ import smtplib
 import os
 from dotenv import load_dotenv
 from database import criar_tabela_se_nao_existir
+app = Flask(__name__)
 
+# Garante que a tabela seja criada na inicialização do aplicativo
+criar_tabela()
 criar_tabela_se_nao_existir()
 
 load_dotenv()
