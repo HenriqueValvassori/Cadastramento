@@ -20,7 +20,7 @@ def criar_tabela_se_nao_existir():
 
 
 def inserir_agendamento(nome, cpf, telefone, email, tipo_procedimento, data, horario):
-    conn = sqlite3.connect('agendamentos.db')
+    conn = sqlite3.connect('Agendamentos.db')
     cursor = conn.cursor()
     cursor.execute('''
         INSERT INTO agendamentos 
@@ -31,7 +31,7 @@ def inserir_agendamento(nome, cpf, telefone, email, tipo_procedimento, data, hor
     conn.close()
 
 def buscar_agendamentos():
-    conn = sqlite3.connect('agendamentos.db')
+    conn = sqlite3.connect('Agendamentos.db')
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM agendamentos')
     agendamentos = cursor.fetchall()
