@@ -1,7 +1,7 @@
 import sqlite3
 
 def criar_tabela_se_nao_existir():
-    conn = sqlite3.connect('banco.db')
+    conn = sqlite3.connect('Agendamentos.db')
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS agendamentos (
