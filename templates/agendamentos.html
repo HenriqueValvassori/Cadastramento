@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamentos Realizados</title>
+</head>
+<body>
+    <h1>Lista de Agendamentos</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th><th>Nome</th><th>CPF</th><th>Telefone</th><th>Email</th>
+            <th>Procedimento</th><th>Data</th><th>Horário</th>
+        </tr>
+        {% for agendamento in agendamentos %}
+        <tr>
+            <td>{{ agendamento[0] }}</td>
+            <td>{{ agendamento[1] }}</td>
+            <td>{{ agendamento[2] }}</td>
+            <td>{{ agendamento[3] }}</td>
+            <td>{{ agendamento[4] }}</td>
+            <td>{{ agendamento[5] }}</td>
+            <td>{{ agendamento[6] }}</td>
+            <td>{{ agendamento[7] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Voltar</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="static/style.css"/>
+</head>
+<body>
+    <h1>Agendar Procedimento</h1>
+    {% if mensagem %}<p style="color:red;">{{ mensagem }}</p>{% endif %}
+    <form method="POST">
+        <label>Nome:</label><input type="text" name="nome" required><br>
+        <label>CPF:</label><input type="text" name="cpf" required><br>
+        <label>Telefone:</label><input type="text" name="telefone" required><br>
+        <label>Email:</label><input type="email" name="email" required><br>
+        <select name="tipo_procedimento" required="">
+            <option value="harmonizacao_facial">Harmonização Facial</option>
+            <option value="preenchimento">Preenchimento</option>
+            <option value="botox">Botox</option>
+            <option value="bioestimulacao_colageno">Bioestimulação de Colágeno</option>
+        </select><br>
+        <label>Data:</label><input type="date" name="data" required><br>
+        <label>Horário:</label>
+        <select name="horario" required="">
+
+                <option value="09:00">09:00</option>
+
+                <option value="10:00">10:00</option>
+
+                <option value="11:00">11:00</option>
+
+                <option value="12:00">12:00</option>
+
+                <option value="13:00">13:00</option>
+
+                <option value="14:00">14:00</option>
+
+                <option value="15:00">15:00</option>
+
+                <option value="16:00">16:00</option>
+
+                <option value="17:00">17:00</option>
+
+                <option value="18:00">18:00</option>
+
+                <option value="19:00">19:00</option>
+
+                <option value="20:00">20:00</option>
+
+        </select>
+        <button type="submit">Agendar</button>
+
+    </form>
+
+</body>
+</html>
