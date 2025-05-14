@@ -77,6 +77,6 @@ def enviar_email_confirmacao(nome, cpf, telefone, email_cliente, procedimento, d
         print("Erro ao enviar e-mail:", e)
 
 
-if __name__ == '__main__':
-    database.criar_tabela()
-    app.run(debug=True)
+#if __name__ == '__main__':
+ #   database.criar_tabela()
+  #  app.run(debug=True)
