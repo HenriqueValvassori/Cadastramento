@@ -17,7 +17,7 @@ def criar_tabela():
     ''')
     conn.commit()
     conn.close()
-
+criar_tabela()
 def inserir_agendamento(nome, cpf, telefone, email, tipo_procedimento, data, horario):
     conn = sqlite3.connect('agendamentos.db')
     cursor = conn.cursor()
