@@ -5,6 +5,10 @@ from email.message import EmailMessage
 import smtplib
 import os
 from dotenv import load_dotenv
+from database import criar_tabela_se_nao_existir
+
+criar_tabela_se_nao_existir()
+
 load_dotenv()
 
 
